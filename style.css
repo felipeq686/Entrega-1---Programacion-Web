@@ -1,5 +1,7 @@
 :root {
     --color_fuente_blanco: #fff;
+    --color_azul: #3e6ae1;
+    --color_gris: #393c41;
 }
 
 
@@ -11,6 +13,7 @@ body {
 
     font-family: "Open Sans", sans-serif;
     color: var(--color_fuente_blanco);
+    margin: 0;
 }
 
 img {
@@ -19,7 +22,107 @@ img {
 
 .barra-navegacion {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.top-main{
+    margin: 0 0 auto;
+    display: flexbox;
+    text-align: center;
+}
+
+.top-main h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.top-main h2 {
+    text-decoration: underline;
+    font-size: 28px;
+    margin: 0;
+}
+
+.top-main h3 {
+    font-size: 17px;
+    margin: 5px 0;
+}
+
+.bottom-main {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-around;
+    width: 800px;
+}
+
+.bottom-main .texto1 h2 {
+    text-align: center;
+}
+
+.bottom-main .texto2 h2 {
+    text-align: center;
+}
+
+.bottom-main .texto3 h2 {
+    text-align: center;
+}
+
+.botones {
+    align-items: center;
+    margin: 50px;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.botones .boton-1 {
+    margin-right: 20px;
+    padding: 14px 64px;
+    background-color: var(--color_azul);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+}
+
+.botones .boton-2 {
+    margin-left: 20px;
+    padding: 14px 64px;
+    background-color: var(--color_fuente_blanco);
+    color: var(--color_gris);
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+}
+
+.botones .boton-1:hover {
+    cursor: pointer;
+}
+
+.botones .boton-2:hover {
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 500;
+    background-color: black;
+}
+
+.container{
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 

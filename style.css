@@ -1,0 +1,25 @@
+:root {
+    --color_fuente_blanco: #fff;
+}
+
+
+body {
+    background-image: url(img/2018-tesla-model-3_1539107623.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    font-family: "Open Sans", sans-serif;
+    color: var(--color_fuente_blanco);
+}
+
+img {
+     height: 90px;
+}
+
+.barra-navegacion {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+

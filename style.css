@@ -10,17 +10,23 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-
+    
     font-family: "Open Sans", sans-serif;
     color: var(--color_fuente_blanco);
     margin: 0;
 }
 
-img {
+.container{
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.container header nav .barra-navegacion .tesla-logo {
      height: 90px;
 }
 
-.barra-navegacion {
+.container header nav .barra-navegacion {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,36 +34,36 @@ img {
     margin: 0 auto;
 }
 
-main {
+.container main {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
 }
 
-.top-main{
+.container main .top-main{
     margin: 0 0 auto;
     display: flexbox;
     text-align: center;
 }
 
-.top-main h1 {
+.container main .top-main h1 {
     font-size: 50px;
     margin: 0;
 }
 
-.top-main h2 {
+.container main .top-main h2 {
     text-decoration: underline;
     font-size: 28px;
     margin: 0;
 }
 
-.top-main h3 {
+.container main .top-main h3 {
     font-size: 17px;
     margin: 5px 0;
 }
 
-.bottom-main {
+.container main .bottom-main {
     display: flex;
     flex-direction:row;
     align-items: center;
@@ -65,26 +71,18 @@ main {
     width: 800px;
 }
 
-.bottom-main .texto1 h2 {
+.container main .bottom-main h2 {
     text-align: center;
 }
 
-.bottom-main .texto2 h2 {
-    text-align: center;
-}
-
-.bottom-main .texto3 h2 {
-    text-align: center;
-}
-
-.botones {
+.container main .botones {
     align-items: center;
     margin: 50px;
     justify-content: space-between;
     font-size: 14px;
 }
 
-.botones .boton-1 {
+.container main .botones .boton-1 {
     margin-right: 20px;
     padding: 14px 64px;
     background-color: var(--color_azul);
@@ -94,7 +92,7 @@ main {
     border: none;
 }
 
-.botones .boton-2 {
+.container main .botones .boton-2 {
     margin-left: 20px;
     padding: 14px 64px;
     background-color: var(--color_fuente_blanco);
@@ -104,15 +102,15 @@ main {
     border: none;
 }
 
-.botones .boton-1:hover {
+.container main .botones .boton-1:hover {
     cursor: pointer;
 }
 
-.botones .boton-2:hover {
+.container main .botones .boton-2:hover {
     cursor: pointer;
 }
 
-footer {
+.container footer {
     display: flex;
     flex-direction: row;
     justify-content:center;
@@ -121,13 +119,8 @@ footer {
     background-color: black;
 }
 
-.footertext{
+.container footer p{
     padding: 0 10px;
 }
 
-.container{
-    min-height: 100dvh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
 
